@@ -8,13 +8,15 @@
     "mf2/mf2": "^0.4",
     "ezyang/htmlpurifier": "^4.10",
     "indieweb/link-rel-parser": "0.1.*",
-    "dg/twitter-php": "3.6.*",
+    "dg/twitter-php": "^4.1.2",
     "p3k/timezone": "*",
     "p3k/http": ">=0.1.11",
-    "cebe/markdown": "1.1.*",
+    "cebe/markdown": "^1.2.1",
     "p3k/picofeed": ">=0.1.39",
     "facebook/graph-sdk": "^5.5",
-    "masterminds/html5": "^2.3"
+    "masterminds/html5": "^2.3",
+    "league/route": "^5.0.0",
+    "phpunit/phpunit": "^9.5.2"
   },
   "autoload": {
     "psr-4": {
@@ -26,9 +28,7 @@
     ]
   },
   "require-dev": {
-    "league/plates": "3.*",
-    "league/route": "1.*",
-    "phpunit/phpunit": "4.8.*"
+    "league/plates": "3.*"
   },
   "autoload-dev": {
     "files": [
@@ -39,5 +39,11 @@
       "controllers/Feeds.php",
       "controllers/Certbot.php"
     ]
-  }
+  },
+    "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Lohn/php-graph-sdk.git"
+    }
+  ]
 }
